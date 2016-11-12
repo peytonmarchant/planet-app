@@ -12,7 +12,7 @@ body {
    display: block;
 }
 
-#planets a {
+a {
   color: white;
   text-decoration: none;
 }

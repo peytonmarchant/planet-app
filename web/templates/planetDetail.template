@@ -1,0 +1,3 @@
+<div class="planet">
+  <div class="title"><%= planet.name %></div>
+</div>

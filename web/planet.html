@@ -4,31 +4,36 @@
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/sammy.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/sammy.template.js" type="text/javascript" charset="utf-8"></script>
+
   <script type="text/javascript" charset="utf-8">
+    function needsTemplates(){
+      return true; 
+    }
+
+    function goToDemo() {
+      window.location.href = 'gravity-test.html#'+planetName.toLowerCase();
+    }
+
+    var planetName = null;
+
     function updatePlanet(name) {
+      planetName = name;
       $('#planet-title').text(name);
 
     }
-
-    (function($) {
-     var app = $.sammy(function() {
-       this.get('#mercury', function() {
-         updatePlanet('Mercury');
-       });
-     });
-     $(function() {
-       app.run()
-     });
-   })(jQuery);
    </script>
+   <script src="js/planets.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
 <body>
 
 Test Planet:
-<div id="planet-title"></div>
+
+<a href="javascript:goToDemo()"><div id="planet-title"></div></a>
 <div id="planet-desc"></div>
 <div id="planet-stats"></div>
+
 
 </body>
 </html>

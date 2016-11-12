@@ -2,10 +2,32 @@
 <head>
   <title>Planet App</title>
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/sammy.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <script type="text/javascript" charset="utf-8">
+   function needsTemplates(){
+    return false;  
+   }
+
+    function goToDemo() {
+      window.location.href = 'planet.html#'+planetName.toLowerCase();
+    }
+
+    var planetName = null;
+
+    function updatePlanet(name) {
+      planetName = name;
+      $('#planet-title').text(name);
+
+    }
+   </script>
+   <script src="js/planets.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 
-Test Gravity
+Test Gravity:<a href="javascript:goToDemo()"><div id="planet-title"></div></a>
 
 </body>
 </html>
