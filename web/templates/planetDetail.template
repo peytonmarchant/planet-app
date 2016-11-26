@@ -1,3 +1,3 @@
 <div class="planet">
-  <div class="title"><%= planet.name %></div>
+  <div class="title">TEST: <%= planet.name %></div>
 </div>

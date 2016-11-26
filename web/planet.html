@@ -1,6 +1,8 @@
 <html>
 <head>
   <title>Planet App</title>
+  <link href="https://fonts.googleapis.com/css?family=Exo|Ropa+Sans" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/sammy.js" type="text/javascript" charset="utf-8"></script>
@@ -18,7 +20,11 @@
     var planetName = null;
 
     function updatePlanet(name, context) {
-      context.load('data/'+name.toLowerCase()+".json");
+      context.load('data/'+name.toLowerCase()+".json").then(function(data) {
+        alert('what');
+        alert(data);
+        context.render('templates/plantDetails.template', {planet: data}).appendTo(context.$element());
+      });
       // context.render('templates/plantDetails.template', {planet: planet})
       //         .appendTo(context.$element());
       planetName = name;

@@ -11,16 +11,9 @@
     var gravityConstant =  6.67 * Math.pow(10,-11);
     // g 	= 	G * M / r2
     var planetG = gravityConstant * planetMass / (Math.pow(planetRadius,2));
-    console.log(planetG );
     var planetg = (planetG/planetMassPower );
-    console.log(planetg);
-    console.log("plant g 1 " + planetg);
     planetg = planetg.toString().split('e');
-
-    console.log("plant g 2 " + planetg[0]);
-
     planetg = (parseFloat(planetg[0]).toFixed(2));
-    console.log("plant g 2 " + planetg);
 
     var feetForBoxToDrop = 10;
 
@@ -38,12 +31,11 @@
         SCALE = 200, // pixels per metre
         world,
         mouseJoint,
-        boxCount = 1,
+        boxCount = 5,
         debugOn = false;
 
     function init() {
         // box2d setup
-        console.log('planet g: ' +  planetg);
         world = new b2Dynamics.b2World(new b2Math.b2Vec2(0,  planetg), true);
         //world.SetGravityScale(1);
         createWallsAndFloor();
@@ -147,7 +139,7 @@
         var fixDef = new b2Dynamics.b2FixtureDef();
         fixDef.density = 1;
         fixDef.friction = .5;
-        fixDef.restitution = .25;
+        fixDef.restitution = .5;
         fixDef.shape = shape;
 
         var boxBody = world.CreateBody(bodyDef);
