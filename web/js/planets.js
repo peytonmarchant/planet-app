@@ -33,14 +33,6 @@
      updatePlanet('Pluto', context);
    });
 
-
-
-
-
-
-
-
-
  });
  $(function() {
    app.run()

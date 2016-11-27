@@ -23,7 +23,7 @@
       context.load('data/'+name.toLowerCase()+".json").then(function(data) {
         alert('what');
         alert(data);
-        context.render('templates/plantDetails.template', {planet: data}).appendTo(context.$element());
+        context.render('templates/planetDetail.template', {planet: data}).appendTo(context.$element());
       });
       // context.render('templates/plantDetails.template', {planet: planet})
       //         .appendTo(context.$element());
@@ -36,7 +36,9 @@
 
 </head>
 <body>
-
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
 Test Planet:
 
 <a href="javascript:goToDemo()"><div id="planet-title"></div></a>
