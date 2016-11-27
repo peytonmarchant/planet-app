@@ -1,3 +1,20 @@
-<div class="planet">
-  <div class="title">TEST: <%= planet.name %></div>
+<div class="planet-card">
+  <div class="title"><%= planet.name %></div>
+  <div class="description"><%= planet.description %></div>
+  <div class="temperature">
+  <h2>Temperature</h2>
+  <%= planet.temperature %>
+  </div>
+
+  <div class="structure">
+  <h2>Structure</h2>
+  <%= planet.structure %>
+  </div>
+
+  <div class="gravity">
+  <h2>Gravity</h2>
+  <%= planet.gravity %><br />
+  See <a href="javascript:goToDemo()">gravity demonstration</a>
+  </div>
+
 </div>

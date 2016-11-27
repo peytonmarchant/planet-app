@@ -4,6 +4,7 @@ Used:
 * [https://codepen.io/saransh/pen/BKJun] for sky background
 * [https://github.com/hecht-software/box2dweb] for gravity page
 * [http://sammyjs.org/] for web flow
+* [https://github.com/drien/jquery-flipster] for front page
 
 References:
 * [http://nova.stanford.edu/projects/mod-x/ad-surfgrav.html]

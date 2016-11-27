@@ -1,60 +1,74 @@
 <html>
 <head>
   <title>Planet App</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.flipster.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/jquery.flipster.css" />
   <link href="https://fonts.googleapis.com/css?family=Exo|Ropa+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+		    // and kick off
+        $('#planets').flipster();
+    });
+  </script>
 </head>
 <body>
   <div id='stars'></div>
   <div id='stars2'></div>
   <div id='stars3'></div>
-Planet App
 
+
+  <h1>Planet App</h1>
+  
 <div id="planets">
-
-  <div id="mercury">
+  <ul>
+  <li id="mercury" class="planet-cover">
     <a href="planet.html#mercury"><img src="images/mercury.png" /></a>
     <a href="planet.html#mercury">Mercury</a>
-  </div>
+  </li>
 
-  <div id="venus">
+  <li id="venus" class="planet-cover">
       <a href="planet.html#venus"><img src="images/venus.png" /></a>
       <a href="planet.html#venus">Venus</a>
- </div>
+  </li>
 
-<div id="earth">
+<li id="earth" class="planet-cover">
     <a href="planet.html#earth"><img src="images/earth.png" /></a>
     <a href="planet.html#earth">Earth</a>
-</div>
+</li>
 
-<div id="earth">
+<li id="mars" class="planet-cover">
     <a href="planet.html#mars"><img src="images/mars.png" /></a>
     <a href="planet.html#mars">Mars</a>
-</div>
+</li>
 
-<div id="jupiter">
+<li id="jupiter" class="planet-cover">
     <a href="planet.html#jupiter"><img src="images/jupiter.png" /></a>
     <a href="planet.html#jupiter">Jupiter</a>
-</div>
+</li>
 
-<div id="saturn">
-    <a href="planet.html#saturn">Saturn</a>
+<li id="saturn" class="planet-cover">
     <a href="planet.html#saturn"><img src="images/saturn.png" /></a>
-</div>
+    <a href="planet.html#saturn">Saturn</a>
+</li>
 
-<div id="uranus">
+<li id="uranus" class="planet-cover">
     <a href="planet.html#uranus"><img src="images/uranus.png" /></a>
     <a href="planet.html#uranus">Uranus</a>
-<div/>
+</li>
 
-<div id="neptune">
+<li id="neptune" class="planet-cover">
     <a href="planet.html#neptune"><img src="images/neptune.png" /></a>
     <a href="planet.html#neptune">Neptune</a>
-</div>
+</li>
 
-<div id="pluto">
+<li id="pluto" class="planet-cover">
     <a href="planet.html#pluto"><img src="images/pluto.png" /></a>
     <a href="planet.html#pluto">Pluto</a>
+</li>
+</ul>
 </div>
 
 </body>

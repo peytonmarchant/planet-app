@@ -21,12 +21,8 @@
 
     function updatePlanet(name, context) {
       context.load('data/'+name.toLowerCase()+".json").then(function(data) {
-        alert('what');
-        alert(data);
         context.render('templates/planetDetail.template', {planet: data}).appendTo(context.$element());
       });
-      // context.render('templates/plantDetails.template', {planet: planet})
-      //         .appendTo(context.$element());
       planetName = name;
       $('#planet-title').text(name);
 
@@ -39,11 +35,8 @@
   <div id='stars'></div>
   <div id='stars2'></div>
   <div id='stars3'></div>
-Test Planet:
 
-<a href="javascript:goToDemo()"><div id="planet-title"></div></a>
-<div id="planet-desc"></div>
-<div id="planet-stats"></div>
+  <div id="main"></div>
 
 
 </body>
