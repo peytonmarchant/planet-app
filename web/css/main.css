@@ -11,6 +11,10 @@ body {
    font-family: 'Exo', sans-serif;
    display: block;
 }
+.side {
+    display: table-cell;
+    padding-left: 36px;
+}
 
 .planet-card {
    width: 60%;

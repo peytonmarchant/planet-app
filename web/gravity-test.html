@@ -22,7 +22,13 @@
     function updatePlanet(name, context) {
       planetName = name;
       $('#planet-title').text(name);
-
+      context.load('data/'+name.toLowerCase()+".json").then(function(data) {
+        planetMassPower = Math.pow(10,parseInt(data.massPow));
+        planetMass = parseFloat(data.mass);
+        planetRadius = parseInt(data.radius);
+        setupAnim();
+        gravity.init();
+      });
     }
    </script>
    <script src="js/planets.js" type="text/javascript" charset="utf-8"></script>
@@ -31,7 +37,25 @@
   <div id='stars'></div>
   <div id='stars2'></div>
   <div id='stars3'></div>
-Test Gravity:<a href="javascript:goToDemo()"><div id="planet-title"></div></a>
+
+  <div class="planet-card">
+    <div class="side">
+      <div class="description">Gravity Demo for:</div>
+      <div class="title">
+        <a href="javascript:goToDemo()"><div id="planet-title"></div></a>
+      </div>
+    </div>
+    <div class="side">
+      <div class="description">Gravity Acceleration:</div>
+      <div class="title" id="acceleration">
+        0
+      </div>
+    </div>
+    <div class="side">
+      <div class="description">Time Took:</div>
+      <div class="title" id="timetook">0</div>
+    </div>
+  </div>
 
 <div id="container" class="simple"></div>
 <script src="js/Box2D.js" type="text/javascript" charset="utf-8"></script>
