@@ -1,7 +1,10 @@
 {
 "name":"Mercury",
-"description":"to do",
+"description":"Mercury is the closest planet to the Sun. It undergoes major temperature swings, ranging from -180 degrees Celsius to +430 degrees Celsius. Mercury has a highly cratered outer surface and is known to have an Iron core. However, it has a weaker magnetic field than Earth's. Ice is present at Mercury's poles, showing there used to be water. Mercury has almost no atmosphere and is usually masked by the brightness of the Sun. ",
 "gravity":"0.378",
-"temprature":"Mercury undergoes major temperature swings, ranging from +430 degrees celsius to -180 degrees celsius.",
+"mass":"3.30",
+"massPow":"23",
+"radius":"2439",
+"temperature":"Mercury undergoes major temperature swings, ranging from +430 degrees celsius to -180 degrees celsius.",
 "structure":"Mercury has a highly cratered outer surface and a iron core."
 }

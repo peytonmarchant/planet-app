@@ -1,7 +1,10 @@
 {
 "name":"Mars",
-"description":"to do",
+"description":"Mars is the fourth closest planet to the Sun. In Winter temperatures are -125 degrees Celsius. In Summer the temperatures are 20 degrees Celsius, but can plummet down to -77 degrees Celsius at night. Mars no langer has a magnetic field and has lost it's atmosphere due to solar winds. When it is closer to the Sun it is more likely to have huge dust storms that envelop the entire planet. Recently NASA has figured out that Mars has liquid water on it.",
 "gravity":"0.377",
+"mass":"6.42",
+"massPow":"23",
+"radius":"3393",
 "temperature":"In winter it gets to -125 degrees celsius. In summer the temperatures get to 20 degrees celsius, but plmmet down to 77 degrees celsius at night.",
 "structure":"The core is made of Iron, Nickel, and Sulfur, surrounded by a silicate mantle."
 }

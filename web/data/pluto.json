@@ -1,7 +1,10 @@
 {
 "name":"Pluto",
-"description":"to do",
+"description":"Pluto is the farthest away from the Sun. It is made of rock and ice with a thin atmosphere of Nitrogen, Methane, and Carbon Monoxide. Pluto's temperature is around -230 degrees Celsius.",
 "gravity":"0.071",
-"temprature":"Pluto's temperature is around -230 degrees celsius.",
-"structure":"It is made of rock and ice with a thin atmosphere of Nitrogen, Methene, and Carbon Monoxide.",
+"mass":"1.29",
+"massPow":"22",
+"radius":"1150",
+"temperature":"Pluto's temperature is around -230 degrees celsius.",
+"structure":"It is made of rock and ice with a thin atmosphere of Nitrogen, Methene, and Carbon Monoxide."
 }

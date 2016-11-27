@@ -1,7 +1,10 @@
 {
 "name":"Uranus",
-"description":"to do",
+"description":"Uranus is the seventh closest planet to the Sun. It is thought to be compromised of a rocky core surrounded by water, Ammonia, and Methane. This is surrounded by Hydrogen, Helium, and Methane. Oddly, Uranus has a temperature of -224 degrees Celsius. This is odd, because all the other gas giants produce more heat than recived from the Sun, due to their very hot cores. Uranus also has rings. Scientists figured this out when Uranus passed over a star and the star darkend a bit. The rings are made of ice and some dark radiation-processed organics which is why you don't see Uranus's rings.",
 "gravity":"0.886",
-"temprature":"Uranus has a temperature of -224 degrees celsius even though most gas giants give off more heat radiation than they recieve from the Sun.",
-"structure":"Uranus is thought to be comprised of a rocky core surrounde by Hydrogen, Helium, and Methane.",
+"mass":"8.68",
+"massPow":"25",
+"radius":"25559",
+"temperature":"Uranus has a temperature of -224 degrees celsius even though most gas giants give off more heat radiation than they recieve from the Sun.",
+"structure":"Uranus is thought to be comprised of a rocky core surrounde by Hydrogen, Helium, and Methane."
 }

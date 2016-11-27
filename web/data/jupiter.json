@@ -1,7 +1,10 @@
 {
 "name":"Jupiter",
-"description":"to do",
+"description":"Jupiter is the fifth closest planet to the Sun and is made of 74% Hydrogen and 24% Helium. It's core is 24,000 degrees Celsius and it's clouds are -145 degrees Celsius. It is by far the largest planet in the solar system. Jupiter is compromised of gas and has a rocky core surrounded by liquid mettalic Hydrogen.The clouds are compromised of Ammonia crystals and the big spot is a huge storm that's been raging on for a really long time.",
 "gravity":"2.36",
-"temprature":"The core is 24,000 degrees celsius. The clouds of Jupiter are -145 degrees cesius. ",
+"mass":"1.90",
+"massPow":"27",
+"radius":"71492",
+"temperature":"The core is 24,000 degrees celsius. The clouds of Jupiter are -145 degrees cesius. ",
 "structure":"75% hydrogen and 24% helium."
 }

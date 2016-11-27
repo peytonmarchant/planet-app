@@ -1,7 +1,10 @@
 {
 "name":"Neptune",
-"description":"to do",
+"description":"Neptune is the eighth closest planet to the Sun. Neptune is similar in composition to Uranus except, you can clearly see the storms on Neptune as the great white spots. It's core is about 5,200 degrees Celsius and it's outer surface is -220 degrees Celsius. Neptune also has rings. It's rings are thought to arch, because of the gravitational effects of Neptune's moons. ",
 "gravity":"1.12",
-"temprature":"Neptune's core is about 5,200 degrees celsius and has an outer surface temperature of -220 degrees celsius.",
+"mass":"1.02",
+"massPow":"26",
+"radius":"24764",
+"temperature":"Neptune's core is about 5,200 degrees celsius and has an outer surface temperature of -220 degrees celsius.",
 "structure":"Neptune is thought to be comprised of a rocky core surrounde by water, Ammonia, and Methane "
 }

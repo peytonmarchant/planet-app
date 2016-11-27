@@ -1,7 +1,10 @@
 {
 "name":"Saturn",
-"description":"to do",
+"description":"Saturn is the sixth closest planet to the Sun and is made of 96% Hydrogen and 3% Helium. It is also mainly made up of gas. The upper layers are made up of liquid water, ammounium hydrosulfide, hydrogen, and Helium. It's rocky core surrounded by liquid metallic Hydrogen is very hot, reaching up to 11,700 degrees Celsius, the upper layers are -180 degrees Celsius and if you go 350 km. deeper, the temperature is 0 degrees. The core generates more heat than it recieves from the Sun. The cloud layers in Saturn are similar to Jupiter's, except the banding is weaker and wider. Every Saturnian yr. a storm called the great white spot forms. It's rings are made of ice crystals, dust, and sometimes, boulders. Saturn is so big that the hexagon shape on the top of Saturn is bigger than Earth.",
 "gravity":"0.916",
-"temprature":"The core in Saturn is 11,700 degrees celsius, the upper layers are -180 degrees celsius and if you go 350 km. deeper the temperatures are 0 degrees.",
-"structure":"It has a rocky core surrounded by liquid, mettalic, hydrogen. It's upper layer is made of liquid water, Ammonium Hydrosulfide, hydrogen, and Helium.",
+"mass":"5.69",
+"massPow":"26",
+"radius":"60268",
+"temperature":"The core in Saturn is 11,700 degrees celsius, the upper layers are -180 degrees celsius and if you go 350 km. deeper the temperatures are 0 degrees.",
+"structure":"It has a rocky core surrounded by liquid, mettalic, hydrogen. It's upper layer is made of liquid water, Ammonium Hydrosulfide, hydrogen, and Helium."
 }
