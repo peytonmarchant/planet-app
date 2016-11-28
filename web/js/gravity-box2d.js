@@ -2,6 +2,7 @@ var planetMassPower = Math.pow(10,23);
 var planetMass = 6.42,
     planetRadius = 3393;
 var planetG, planetg;
+var velocity = 0;
 
 var gravityConstant =  6.67 * Math.pow(10,-11);
 // g 	= 	G * M / r2
@@ -23,7 +24,7 @@ var w = window.innerWidth - 10,
     SCALE = 400, // pixels per metre
     world,
     mouseJoint,
-    boxCount = 5,
+    boxCount = 1,
     debugOn = false;
 
 var startTime;
@@ -31,11 +32,14 @@ var startTime;
 function setupAnim() {
 
   planetMass = planetMass * planetMassPower;
-  planetG = gravityConstant * planetMass / (Math.pow(planetRadius,2));
-  planetg = (planetG/planetMassPower );
-  planetg = planetg.toString().split('e');
-  planetg = (parseFloat(planetg[0]).toFixed(2));
+  // planetG = gravityConstant * planetMass / (Math.pow(planetRadius,2));
+  // planetg = (planetG/planetMassPower );
+  // planetg = planetg.toString().split('e');
+  // planetg = (parseFloat(planetg[0]).toFixed(2));
+
+  planetg = velocity;
   $('#acceleration').text(planetg);
+
    window.requestAnimFrame = (function () {
      return  window.requestAnimationFrame ||
          window.webkitRequestAnimationFrame ||
@@ -104,6 +108,9 @@ function createWallsAndFloor() {
     listener.PostSolve = function (contact, impulse) {
       var bodyA = contact.GetFixtureA().GetBody().GetUserData();
       var bodyB = contact.GetFixtureB().GetBody().GetUserData();
+      if (bodyB == null || typeof bodyB === 'undefined') {
+        return;
+      }
       var objectTypeB = bodyB.getAttribute('objectType');
       console.log("Collision.....");
       if (objectTypeB == 'floor') {
@@ -120,7 +127,7 @@ function createWallsAndFloor() {
     world.SetContactListener(listener);
  }
 
-function createBox(size) {
+function createBox(size, velocityOfObject) {
      var bodyDef = new b2Dynamics.b2BodyDef();
      bodyDef.type = b2Dynamics.b2Body.b2_dynamicBody;
      bodyDef.position.x = (w/2) / SCALE;
@@ -138,7 +145,7 @@ function createBox(size) {
      var boxBody = world.CreateBody(bodyDef);
      boxBody.CreateFixture(fixDef);
 
-     boxBody.SetAngularVelocity(planetg);
+     boxBody.SetAngularVelocity(velocityOfObject);
 //        boxBody.SetAngularVelocity(Math.random() * 10 - 5);
 
      return boxBody;
@@ -229,6 +236,8 @@ gravity = {
         //world.SetGravityScale(1);
         createWallsAndFloor();
 
+        var velocityOfObject = Math.sqrt((2 * planetg)*feetForBoxToDrop);
+
         for (var i = 0; i < boxCount; i++) {
             var boxId = i+1;
             if (boxId == 1) {
@@ -266,7 +275,7 @@ gravity = {
             });
 
             // create b2Body
-            var boxBody = createBox(size);
+            var boxBody = createBox(size, velocityOfObject);
             boxBody.SetUserData(div);
 
             // div needs a reference to body for adding mouse joint
