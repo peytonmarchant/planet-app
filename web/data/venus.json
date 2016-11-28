@@ -5,6 +5,7 @@
 "mass":"4.87",
 "massPow":"24",
 "radius":"6051",
+"acceleration": "8.83",
 "temperature":"Venus has a massive greenhouse effect, contributing to it's 460 degrees celsius temperature.",
 "structure":"The Venusian structure is similar to that of Earth's, with a partially molten mettalic core and rocky mantle."
 }

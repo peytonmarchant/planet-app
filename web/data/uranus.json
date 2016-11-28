@@ -5,6 +5,7 @@
 "mass":"8.68",
 "massPow":"25",
 "radius":"25559",
+"acceleration": "10.5",
 "temperature":"Uranus has a temperature of -224 degrees celsius even though most gas giants give off more heat radiation than they recieve from the Sun.",
 "structure":"Uranus is thought to be comprised of a rocky core surrounde by Hydrogen, Helium, and Methane."
 }

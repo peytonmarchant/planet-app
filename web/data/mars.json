@@ -5,6 +5,7 @@
 "mass":"6.42",
 "massPow":"23",
 "radius":"3393",
+"acceleration": "3.75",
 "temperature":"In winter it gets to -125 degrees celsius. In summer the temperatures get to 20 degrees celsius, but plmmet down to 77 degrees celsius at night.",
 "structure":"The core is made of Iron, Nickel, and Sulfur, surrounded by a silicate mantle."
 }

@@ -26,7 +26,8 @@
         planetMassPower = Math.pow(10,parseInt(data.massPow));
         planetMass = parseFloat(data.mass);
         planetRadius = parseInt(data.radius);
-        velocity = parseFloat(data.gravity);
+        planetg = parseFloat(data.gravity);
+        velocity = parseFloat(data.acceleration);
         setupAnim();
         gravity.init();
       });

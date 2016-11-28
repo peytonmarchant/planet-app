@@ -11,3 +11,4 @@ References:
 * [http://impactjs.com/documentation/physics-with-box2d]
 * [http://www.binarytides.com/make-html5-game-box2d-javascript-tutorial/]
 * [https://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903]
+* [http://www.physicsclassroom.com/class/circles/Lesson-3/The-Value-of-g]

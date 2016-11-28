@@ -5,6 +5,7 @@
 "mass":"3.30",
 "massPow":"23",
 "radius":"2439",
+"acceleration": "3.61",
 "temperature":"Mercury undergoes major temperature swings, ranging from +430 degrees celsius to -180 degrees celsius.",
 "structure":"Mercury has a highly cratered outer surface and a iron core."
 }

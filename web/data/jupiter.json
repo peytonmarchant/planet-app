@@ -5,6 +5,7 @@
 "mass":"1.90",
 "massPow":"27",
 "radius":"71492",
+"acceleration": "26.0",
 "temperature":"The core is 24,000 degrees celsius. The clouds of Jupiter are -145 degrees cesius. ",
 "structure":"75% hydrogen and 24% helium."
 }

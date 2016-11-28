@@ -31,13 +31,16 @@ var startTime;
 
 function setupAnim() {
 
-  planetMass = planetMass * planetMassPower;
-  // planetG = gravityConstant * planetMass / (Math.pow(planetRadius,2));
-  // planetg = (planetG/planetMassPower );
-  // planetg = planetg.toString().split('e');
-  // planetg = (parseFloat(planetg[0]).toFixed(2));
+//  planetMass = planetMass * planetMassPower;
+  //planetG = gravityConstant * planetMass / (Math.pow(planetRadius,2));
+  //console.log("planetG: " + planetG);
+  //planetg = (planetG/planetMassPower);
+  //planetg = planetg.toString().split('e');
+  //console.log("planetg: " + planetg);
 
-  planetg = velocity;
+  //planetg = (parseFloat(planetg[0]).toFixed(2));
+
+//  planetg = velocity;
   $('#acceleration').text(planetg);
 
    window.requestAnimFrame = (function () {
@@ -236,7 +239,7 @@ gravity = {
         //world.SetGravityScale(1);
         createWallsAndFloor();
 
-        var velocityOfObject = Math.sqrt((2 * planetg)*feetForBoxToDrop);
+        var velocityOfObject = Math.sqrt((2 * velocity)*feetForBoxToDrop);
 
         for (var i = 0; i < boxCount; i++) {
             var boxId = i+1;
